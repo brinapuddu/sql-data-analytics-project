@@ -1,5 +1,7 @@
-# Retail Sales Intelligence: Customer Behaviour & Product Revenue Analysis
+# Retail Sales Intelligence Project
+###  *Customer Behaviour & Product Revenue Analysis*
 
+---
 
 A complete end-to-end data analytics project using SQL on a retail sales database. The project follows a structured 12-step analytics framework covering Exploratory Data Analysis, Advanced Analytics, and final Reporting.
 
@@ -7,27 +9,27 @@ A complete end-to-end data analytics project using SQL on a retail sales databas
 
 ## Project Roadmap
 
-The project is structured around two tracks — **Exploratory Data Analysis (EDA)** and **Advanced Analytics** — culminating in a final **Reporting** layer.
+The project is structured around two tracks - **Exploratory Data Analysis (EDA)** and **Advanced Analytics** - culminating in a final **Reporting** layer.
 
 ```
 Data Analytics
 │
 ├── Exploratory Data Analysis (EDA)
-│   ├── 01 — Database Exploration
-│   ├── 02 — Dimensions Exploration
-│   ├── 03 — Date Exploration
-│   ├── 04 — Measures Exploration (Big Numbers)
-│   ├── 05 — Magnitude
-│   └── 06 — Ranking (Top N / Bottom N)
+│   ├── 01 - Database Exploration
+│   ├── 02 - Dimensions Exploration
+│   ├── 03 - Date Exploration
+│   ├── 04 - Measures Exploration (Big Numbers)
+│   ├── 05 - Magnitude
+│   └── 06 - Ranking (Top N / Bottom N)
 │
 ├── Advanced Analytics
-│   ├── 07 — Change-Over-Time / Trends
-│   ├── 08 — Cumulative Analysis
-│   ├── 09 — Performance Analysis
-│   ├── 10 — Part-to-Whole (Proportional)
-│   └── 11 — Data Segmentation
+│   ├── 07 - Change-Over-Time / Trends
+│   ├── 08 - Cumulative Analysis
+│   ├── 09 - Performance Analysis
+│   ├── 10 - Part-to-Whole (Proportional)
+│   └── 11 - Data Segmentation
 │
-└── 12 — Reporting ← current stage
+└── 12 - Reporting ← current stage
 ```
 
 ### Step-by-step breakdown
@@ -38,7 +40,7 @@ Data Analytics
 | 02 | EDA | Dimensions Exploration | Explored categorical fields: customer names, product categories, subcategories |
 | 03 | EDA | Date Exploration | Analysed order date ranges, customer birthdates, and temporal coverage |
 | 04 | EDA | Measures Exploration | Identified key numeric measures: sales amount, quantity, cost |
-| 05 | EDA | Magnitude | Quantified scale of data — total customers, products, orders, and revenue |
+| 05 | EDA | Magnitude | Quantified scale of data - total customers, products, orders, and revenue |
 | 06 | EDA | Ranking | Ranked top and bottom performing products and customers by revenue |
 | 07 | Advanced | Change-Over-Time | Analysed sales trends over time to identify growth and seasonal patterns |
 | 08 | Advanced | Cumulative Analysis | Built running totals to understand revenue accumulation over the customer lifecycle |
@@ -250,7 +252,7 @@ FROM product_aggregations
 
 #### Key findings
 
-- **VIP leverage:** VIP customers are only 9% of the base but drive 37% of revenue at $6,510 average spend — 8.6× more than New customers. Retention of this cohort is the single highest-priority action.
+- **VIP leverage:** VIP customers are only 9% of the base but drive 37% of revenue at $6,510 average spend - 8.6× more than New customers. Retention of this cohort is the single highest-priority action.
 - **New customer opportunity:** 79% of customers are classified as New with an average spend of just $758. Converting even 10% of New customers to Regular would add approximately $2.6M in incremental revenue.
 - **Mature customer base:** 100% of customers are aged 40 or above, with 69% aged 50+. There is zero representation from under-40 demographics, indicating a gap in younger audience acquisition.
 - **High recency:** Average recency is 87 months, meaning customers have not purchased in over 7 years on average. This reflects the historical nature of the dataset rather than an active buyer base.
@@ -287,7 +289,7 @@ FROM product_aggregations
 
 #### Key findings
 
-- **Bikes dominate:** Bikes represent 96% of all revenue. Road Bikes and Mountain Bikes alone account for 83% of total sales — the business is effectively a bikes company.
+- **Bikes dominate:** Bikes represent 96% of all revenue. Road Bikes and Mountain Bikes alone account for 83% of total sales - the business is effectively a bikes company.
 - **Product concentration risk:** High-Performer products (51% of catalogue) drive 94% of revenue. The top 10 products are all bikes, led by the Mountain-200 and Road-150 ranges.
 - **Low-Performer candidates:** Just 6 SKUs generate under $36K combined. These are strong candidates for discontinuation or promotional review.
 - **Accessories and Clothing underperform:** Despite broadening the catalogue, non-bike categories generate just 3% of revenue combined, suggesting limited cross-sell success.
@@ -296,12 +298,12 @@ FROM product_aggregations
 
 ## Recommendations
 
-1. **Protect the VIP segment** — implement a dedicated loyalty or retention programme for the 1,653 VIP customers who contribute $10.8M in revenue.
-2. **Activate New customers** — build a post-purchase nurture campaign to move New customers toward their first repeat order and into the Regular bracket.
-3. **Invest in Road and Mountain Bikes** — these two subcategories alone drive $24.4M. Ensuring stock depth and product development here is the highest-impact commercial lever.
-4. **Review Low-Performer SKUs** — 6 products generating under $36K combined should be evaluated for removal to simplify the catalogue.
-5. **Explore younger demographics** — with 0% of customers under 40, there is an untapped market segment worth investigating through targeted acquisition campaigns.
-6. **Investigate recency** — average last purchase was over 7 years ago. A re-engagement or win-back campaign targeting lapsed customers could unlock significant latent value.
+1. **Protect the VIP segment** - implement a dedicated loyalty or retention programme for the 1,653 VIP customers who contribute $10.8M in revenue.
+2. **Activate New customers** - build a post-purchase nurture campaign to move New customers toward their first repeat order and into the Regular bracket.
+3. **Invest in Road and Mountain Bikes** - these two subcategories alone drive $24.4M. Ensuring stock depth and product development here is the highest-impact commercial lever.
+4. **Review Low-Performer SKUs** - 6 products generating under $36K combined should be evaluated for removal to simplify the catalogue.
+5. **Explore younger demographics** - with 0% of customers under 40, there is an untapped market segment worth investigating through targeted acquisition campaigns.
+6. **Investigate recency** - average last purchase was over 7 years ago. A re-engagement or win-back campaign targeting lapsed customers could unlock significant latent value.
 
 ---
 
@@ -315,3 +317,4 @@ FROM product_aggregations
 ---
 
 *Project built following the 12-step Data Analytics framework. All analysis performed on the gold layer of a retail sales data warehouse.*
+
